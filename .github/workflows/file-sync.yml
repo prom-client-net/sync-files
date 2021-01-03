@@ -23,7 +23,13 @@ jobs:
             ^.editorconfig$
             ^.gitattributes$
           TARGET_REPOS: |
+            PrometheusClientNet/Prometheus.Client.DependencyInjection
+            PrometheusClientNet/Prometheus.Client.HealthChecks 
+            PrometheusClientNet/Prometheus.Client.HttpRequestDurations
+            PrometheusClientNet/Prometheus.Client.AspNetCore
             PrometheusClientNet/prom-tmpl
+            PrometheusClientNet/Prometheus.Client.MetricPusher
+            PrometheusClientNet/Prometheus.Client.MetricServer
           GITHUB_TOKEN: ${{ secrets.SYNC_FILES }}
           SRC_ROOT: /sync-root/
           TARGET_ROOT: /
