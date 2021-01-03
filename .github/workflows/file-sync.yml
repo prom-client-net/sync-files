@@ -13,11 +13,19 @@ jobs:
         with:
           GIT_EMAIL: cmt@phnx47.net
           GIT_USERNAME: Serge K
-          COMMIT_MESSAGE: "chore: update file(s) from Sync-Files"
+          COMMIT_MESSAGE: "chore: update file(s) from sync-files"
           FILE_PATTERNS: |
             ^LICENSE$
             ^icon.png$
+            ^Directory.Build.props$
+            ^stylecop.json$
           TARGET_REPOS: |
-            PrometheusClientNet/Prometheus.Client.Examples
             PrometheusClientNet/Prometheus.Client
+            PrometheusClientNet/Prometheus.Client.DependencyInjection
+            PrometheusClientNet/Prometheus.Client.HealthChecks 
+            PrometheusClientNet/Prometheus.Client.HttpRequestDurations
+            PrometheusClientNet/Prometheus.Client.AspNetCore
+            PrometheusClientNet/Prometheus.Client.prom-tmpl
+            PrometheusClientNet/Prometheus.Client.MetricPusher
+            PrometheusClientNet/Prometheus.Client.MetricServer
           GITHUB_TOKEN: ${{ secrets.SYNC_FILES }}
