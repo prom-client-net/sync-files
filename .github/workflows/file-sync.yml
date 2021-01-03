@@ -11,8 +11,11 @@ jobs:
     steps:
       - uses: adrianjost/files-sync-action@master
         with:
+          GIT_EMAIL: cmt@phnx47.net
+          GIT_USERNAME: Serge K
           FILE_PATTERNS: |
             ^LICENSE$
+            ^icon.png$
           TARGET_REPOS: |
             PrometheusClientNet/Prometheus.Client.Examples
           GITHUB_TOKEN: ${{ secrets.SYNC_FILES }}
