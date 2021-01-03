@@ -9,28 +9,19 @@ jobs:
   file-sync:
     runs-on: ubuntu-20.04
     steps:
-      - uses: adrianjost/files-sync-action@master
+      - name: Fetching Local Repository
+        uses: actions/checkout@master
+      - name: File Sync
+        uses: kbrashears5/github-action-file-sync@master
         with:
-          GIT_EMAIL: cmt@phnx47.net
-          GIT_USERNAME: Serge K
-          COMMIT_MESSAGE: "chore: update file(s) from sync-files"
-          FILE_PATTERNS: |
-            ^LICENSE$
-            ^icon.png$
-            ^Directory.Build.props$
-            ^stylecop.json$
-            ^.ruleset$
-            ^.editorconfig$
-            ^.gitattributes$
-          TARGET_REPOS: |
-            PrometheusClientNet/Prometheus.Client
-            PrometheusClientNet/Prometheus.Client.DependencyInjection
-            PrometheusClientNet/Prometheus.Client.HealthChecks 
-            PrometheusClientNet/Prometheus.Client.HttpRequestDurations
-            PrometheusClientNet/Prometheus.Client.AspNetCore
-            PrometheusClientNet/prom-tmpl
-            PrometheusClientNet/Prometheus.Client.MetricPusher
-            PrometheusClientNet/Prometheus.Client.MetricServer
-          GITHUB_TOKEN: ${{ secrets.SYNC_FILES }}
-          SRC_ROOT: /sync-root/
-          TARGET_ROOT: /
+          REPOSITORIES: |
+            PrometheusClientNet/prom-tmpl@master
+          FILES: |
+            sync-root/LICENSE=LICENSE
+            sync-root/icon.png=icon.png
+            sync-root/Directory.Build.props=Directory.Build.props
+            sync-root/stylecop.json=stylecop.json
+            sync-root/.ruleset=.ruleset
+            sync-root/.editorconfig=.editorconfig
+            sync-root/.gitattributes=.gitattributes
+          TOKEN: ${{ secrets.SYNC_FILES }}
