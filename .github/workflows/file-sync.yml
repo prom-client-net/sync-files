@@ -26,7 +26,7 @@ jobs:
             PrometheusClientNet/Prometheus.Client.HealthChecks 
             PrometheusClientNet/Prometheus.Client.HttpRequestDurations
             PrometheusClientNet/Prometheus.Client.AspNetCore
-            PrometheusClientNet/Prometheus.Client.prom-tmpl
+            PrometheusClientNet/prom-tmpl
             PrometheusClientNet/Prometheus.Client.MetricPusher
             PrometheusClientNet/Prometheus.Client.MetricServer
           GITHUB_TOKEN: ${{ secrets.SYNC_FILES }}
