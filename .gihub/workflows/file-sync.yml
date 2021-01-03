@@ -1,0 +1,18 @@
+name: File Sync
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  file-sync:
+    runs-on: ubuntu-20.04
+    steps:
+      uses: adrianjost/files-sync-action@master
+      with:
+        FILE_PATTERNS: |
+          ^LICENSE$
+        TARGET_REPOS: |
+          PrometheusClientNet/Prometheus.Client.Examples
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_FILES }}
