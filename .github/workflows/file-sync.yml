@@ -20,6 +20,8 @@ jobs:
             ^Directory.Build.props$
             ^stylecop.json$
             ^.ruleset$
+            ^.editorconfig$
+            ^.gitattributes$
           TARGET_REPOS: |
             PrometheusClientNet/Prometheus.Client
             PrometheusClientNet/Prometheus.Client.DependencyInjection
