@@ -15,7 +15,13 @@ jobs:
           GIT_USERNAME: Serge K
           COMMIT_MESSAGE: "chore: update file(s) from sync-files"
           FILE_PATTERNS: |
-            ^\.$
+            ^LICENSE$
+            ^icon.png$
+            ^Directory.Build.props$
+            ^stylecop.json$
+            ^.ruleset$
+            ^.editorconfig$
+            ^.gitattributes$
           TARGET_REPOS: |
             PrometheusClientNet/prom-tmpl
           GITHUB_TOKEN: ${{ secrets.SYNC_FILES }}
