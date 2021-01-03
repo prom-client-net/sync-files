@@ -13,9 +13,11 @@ jobs:
         with:
           GIT_EMAIL: cmt@phnx47.net
           GIT_USERNAME: Serge K
+          COMMIT_MESSAGE: "chore: update file(s) from Sync-Files"
           FILE_PATTERNS: |
             ^LICENSE$
             ^icon.png$
           TARGET_REPOS: |
             PrometheusClientNet/Prometheus.Client.Examples
+            PrometheusClientNet/Prometheus.Client
           GITHUB_TOKEN: ${{ secrets.SYNC_FILES }}
