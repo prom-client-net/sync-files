@@ -19,6 +19,7 @@ jobs:
             ^icon.png$
             ^Directory.Build.props$
             ^stylecop.json$
+            ^.ruleset$
           TARGET_REPOS: |
             PrometheusClientNet/Prometheus.Client
             PrometheusClientNet/Prometheus.Client.DependencyInjection
