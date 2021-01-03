@@ -15,7 +15,14 @@ jobs:
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
+            PrometheusClientNet/Prometheus.Client@master
+            PrometheusClientNet/Prometheus.Client.DependencyInjection@master
+            PrometheusClientNet/Prometheus.Client.HealthChecks@master
+            PrometheusClientNet/Prometheus.Client.HttpRequestDurations@master
+            PrometheusClientNet/Prometheus.Client.AspNetCore@master
             PrometheusClientNet/prom-tmpl@master
+            PrometheusClientNet/Prometheus.Client.MetricPusher@master
+            PrometheusClientNet/Prometheus.Client.MetricServer@master
           FILES: |
             sync-root/LICENSE=LICENSE
             sync-root/icon.png=icon.png
