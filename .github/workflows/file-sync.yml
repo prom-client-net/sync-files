@@ -23,6 +23,7 @@ jobs:
             ^.editorconfig$
             ^.gitattributes$
           TARGET_REPOS: |
+            PrometheusClientNet/Prometheus.Client
             PrometheusClientNet/Prometheus.Client.DependencyInjection
             PrometheusClientNet/Prometheus.Client.HealthChecks 
             PrometheusClientNet/Prometheus.Client.HttpRequestDurations
