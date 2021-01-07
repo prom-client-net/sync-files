@@ -24,11 +24,11 @@ jobs:
             PrometheusClientNet/Prometheus.Client.MetricPusher@master
             PrometheusClientNet/Prometheus.Client.MetricServer@master
           FILES: |
-            sync-root/LICENSE=LICENSE
-            sync-root/icon.png=icon.png
-            sync-root/Directory.Build.props=Directory.Build.props
-            sync-root/stylecop.json=stylecop.json
-            sync-root/.ruleset=.ruleset
-            sync-root/.editorconfig=.editorconfig
-            sync-root/.gitattributes=.gitattributes
+            root/LICENSE=LICENSE
+            root/icon.png=icon.png
+            root/Directory.Build.props=Directory.Build.props
+            root/stylecop.json=stylecop.json
+            root/.ruleset=.ruleset
+            root/.editorconfig=.editorconfig
+            root/.gitattributes=.gitattributes
           TOKEN: ${{ secrets.SYNC_FILES }}
