@@ -31,4 +31,5 @@ jobs:
             root/.ruleset=.ruleset
             root/.editorconfig=.editorconfig
             root/.gitattributes=.gitattributes
+            github/renovate.json=.github/renovate.json
           TOKEN: ${{ secrets.SYNC_FILES }}
