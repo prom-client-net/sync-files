@@ -15,6 +15,7 @@ jobs:
       - name: File Sync
         uses: kbrashears5/github-action-file-sync@master
         with:
+          PULL_REQUEST_BRANCH_NAME: true
           REPOSITORIES: |
             PrometheusClientNet/Prometheus.Client
             PrometheusClientNet/Prometheus.Client.DependencyInjection
