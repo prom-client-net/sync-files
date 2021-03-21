@@ -1,6 +1,7 @@
 name: File Sync
 
 on:
+  schedule: [{ cron: "15 */24 * * *" }]
   push:
     branches:
       - master
@@ -12,17 +13,17 @@ jobs:
       - name: Fetching Local Repository
         uses: actions/checkout@v2
       - name: File Sync
-        uses: kbrashears5/github-action-file-sync@v2.2.0
+        uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
-            PrometheusClientNet/Prometheus.Client@master
-            PrometheusClientNet/Prometheus.Client.DependencyInjection@master
-            PrometheusClientNet/Prometheus.Client.HealthChecks@master
-            PrometheusClientNet/Prometheus.Client.HttpRequestDurations@master
-            PrometheusClientNet/Prometheus.Client.AspNetCore@master
-            PrometheusClientNet/prom-tmpl@master
-            PrometheusClientNet/Prometheus.Client.MetricPusher@master
-            PrometheusClientNet/Prometheus.Client.MetricServer@master
+            PrometheusClientNet/Prometheus.Client
+            PrometheusClientNet/Prometheus.Client.DependencyInjection
+            PrometheusClientNet/Prometheus.Client.HealthChecks
+            PrometheusClientNet/Prometheus.Client.HttpRequestDurations
+            PrometheusClientNet/Prometheus.Client.AspNetCore
+            PrometheusClientNet/prom-tmpl
+            PrometheusClientNet/Prometheus.Client.MetricPusher
+            PrometheusClientNet/Prometheus.Client.MetricServer
           FILES: |
             root/LICENSE=LICENSE
             root/icon.png=icon.png
