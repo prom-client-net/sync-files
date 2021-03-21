@@ -15,6 +15,7 @@ jobs:
       - name: File Sync
         uses: phnx47/github-action-file-sync@master
         with:
+          PULL_REQUEST_BRANCH_NAME: master
           REPOSITORIES: |
             PrometheusClientNet/Prometheus.Client@sync-files
             PrometheusClientNet/Prometheus.Client.DependencyInjection@sync-files
