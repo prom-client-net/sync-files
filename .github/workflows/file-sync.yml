@@ -13,17 +13,17 @@ jobs:
       - name: Fetching Local Repository
         uses: actions/checkout@v2
       - name: File Sync
-        uses: kbrashears5/github-action-file-sync@master
+        uses: phnx47/github-action-file-sync@master
         with:
           REPOSITORIES: |
-            PrometheusClientNet/Prometheus.Client
-            PrometheusClientNet/Prometheus.Client.DependencyInjection
-            PrometheusClientNet/Prometheus.Client.HealthChecks
-            PrometheusClientNet/Prometheus.Client.HttpRequestDurations
-            PrometheusClientNet/Prometheus.Client.AspNetCore
-            PrometheusClientNet/prom-tmpl
-            PrometheusClientNet/Prometheus.Client.MetricPusher
-            PrometheusClientNet/Prometheus.Client.MetricServer
+            PrometheusClientNet/Prometheus.Client@sync-files
+            PrometheusClientNet/Prometheus.Client.DependencyInjection@sync-files
+            PrometheusClientNet/Prometheus.Client.HealthChecks@sync-files
+            PrometheusClientNet/Prometheus.Client.HttpRequestDurations@sync-files
+            PrometheusClientNet/Prometheus.Client.AspNetCore@sync-files
+            PrometheusClientNet/prom-tmpl@sync-files
+            PrometheusClientNet/Prometheus.Client.MetricPusher@sync-files
+            PrometheusClientNet/Prometheus.Client.MetricServer@sync-files
           FILES: |
             root/LICENSE=LICENSE
             root/icon.png=icon.png
