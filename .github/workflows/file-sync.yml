@@ -13,7 +13,7 @@ jobs:
       - name: Fetching Local Repository
         uses: actions/checkout@v2
       - name: File Sync
-        uses: phnx47/github-action-file-sync@master
+        uses: kbrashears5/github-action-file-sync@master
         with:
           PULL_REQUEST_BRANCH_NAME: master
           REPOSITORIES: |
