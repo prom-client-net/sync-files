@@ -34,4 +34,4 @@ jobs:
             root/.editorconfig=.editorconfig
             root/.gitattributes=.gitattributes
             github/renovate.json=.github/renovate.json
-          TOKEN: ${{ secrets.SYNC_FILES }}
+          TOKEN: ${{ secrets.GH_DEPLOY_KEY }}
