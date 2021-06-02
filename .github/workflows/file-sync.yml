@@ -1,7 +1,6 @@
 name: File Sync
 
 on:
-  schedule: [{ cron: "15 */24 * * *" }]
   push:
     branches:
       - master
@@ -10,21 +9,21 @@ jobs:
   file-sync:
     runs-on: ubuntu-20.04
     steps:
-      - name: Fetching Local Repository
+      - name: Checkout
         uses: actions/checkout@v2
       - name: File Sync
         uses: kbrashears5/github-action-file-sync@master
         with:
           PULL_REQUEST_BRANCH_NAME: master
           REPOSITORIES: |
-            PrometheusClientNet/Prometheus.Client@sync-files
-            PrometheusClientNet/Prometheus.Client.DependencyInjection@sync-files
-            PrometheusClientNet/Prometheus.Client.HealthChecks@sync-files
-            PrometheusClientNet/Prometheus.Client.HttpRequestDurations@sync-files
-            PrometheusClientNet/Prometheus.Client.AspNetCore@sync-files
-            PrometheusClientNet/prom-tmpl@sync-files
-            PrometheusClientNet/Prometheus.Client.MetricPusher@sync-files
-            PrometheusClientNet/Prometheus.Client.MetricServer@sync-files
+            prom-client-net/Prometheus.Client@sync-files
+            prom-client-net/Prometheus.Client.DependencyInjection@sync-files
+            prom-client-net/Prometheus.Client.HealthChecks@sync-files
+            prom-client-net/Prometheus.Client.HttpRequestDurations@sync-files
+            prom-client-net/Prometheus.Client.AspNetCore@sync-files
+            prom-client-net/prom-tmpl@sync-files
+            prom-client-net/Prometheus.Client.MetricPusher@sync-files
+            prom-client-net/Prometheus.Client.MetricServer@sync-files
           FILES: |
             root/LICENSE=LICENSE
             root/icon.png=icon.png
