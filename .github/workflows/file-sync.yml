@@ -16,14 +16,14 @@ jobs:
         with:
           PULL_REQUEST_BRANCH_NAME: master
           REPOSITORIES: |
-            prom-client-net/Prometheus.Client@sync-files
-            prom-client-net/Prometheus.Client.DependencyInjection@sync-files
-            prom-client-net/Prometheus.Client.HealthChecks@sync-files
-            prom-client-net/Prometheus.Client.HttpRequestDurations@sync-files
-            prom-client-net/Prometheus.Client.AspNetCore@sync-files
+            prom-client-net/prom-client@sync-files
+            prom-client-net/prom-client-dependencyinjection@sync-files
+            prom-client-net/prom-client-healthchecks@sync-files
+            prom-client-net/prom-client-httprequestdurations@sync-files
+            prom-client-net/prom-client-aspnetcore@sync-files
             prom-client-net/prom-tmpl@sync-files
-            prom-client-net/Prometheus.Client.MetricPusher@sync-files
-            prom-client-net/Prometheus.Client.MetricServer@sync-files
+            prom-client-net/prom-client-metricpusher@sync-files
+            prom-client-net/prom-client-metricserver@sync-files
           FILES: |
             root/LICENSE=LICENSE
             root/icon.png=icon.png
