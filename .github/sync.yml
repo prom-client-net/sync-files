@@ -10,7 +10,7 @@ group:
     prom-client-net/prom-client-metricserver
   files:
     - source: main-workflows/
-      dest: .github/main-workflows/
+      dest: .github/workflows/
     - source: root/
       dest:
     - source: github/
