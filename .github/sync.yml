@@ -12,6 +12,6 @@ group:
     - source: main-workflows/
       dest: .github/workflows/
     - source: root/
-      dest:
+      dest: ./
     - source: github/
       dest: .github/
