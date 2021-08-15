@@ -10,29 +10,12 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
       - name: File Sync
-        uses: kbrashears5/github-action-file-sync@master
+        uses: BetaHuhn/repo-file-sync-action@latest
         with:
-          PULL_REQUEST_BRANCH_NAME: master
-          REPOSITORIES: |
-            prom-client-net/prom-client@sync-files
-            prom-client-net/prom-client-dependencyinjection@sync-files
-            prom-client-net/prom-client-healthchecks@sync-files
-            prom-client-net/prom-client-httprequestdurations@sync-files
-            prom-client-net/prom-client-aspnetcore@sync-files
-            prom-client-net/prom-tmpl@sync-files
-            prom-client-net/prom-client-metricpusher@sync-files
-            prom-client-net/prom-client-metricserver@sync-files
-          FILES: |
-            root/LICENSE=LICENSE
-            root/icon.png=icon.png
-            root/Directory.Build.props=Directory.Build.props
-            root/stylecop.json=stylecop.json
-            root/.ruleset=.ruleset
-            root/.editorconfig=.editorconfig
-            root/.gitattributes=.gitattributes
-            github/renovate.json=.github/renovate.json
-            github/CODEOWNERS=.github/CODEOWNERS
-            github/FUNDING.yml=.github/FUNDING.yml
-          TOKEN: ${{ secrets.GH_DEPLOY_KEY }}
+          GH_PAT: ${{ secrets.GH_DEPLOY_KEY }}
+          ASSIGNEES: phnx47
+          PR_LABELS: automerge
+          GIT_USERNAME: github-actions[bot]
+          GIT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
