@@ -22,3 +22,4 @@ group:
     repos: |
       prom-client-net/prom-client-dependencyinjection
       prom-client-net/prom-client-httprequestdurations
+      prom-client-net/prom-client-metricpusher
