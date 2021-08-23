@@ -20,6 +20,7 @@ group:
       - source: simple-workflows/
         dest: .github/workflows/
     repos: |
+      prom-client-net/prom-tmpl
       prom-client-net/prom-client-dependencyinjection
       prom-client-net/prom-client-httprequestdurations
       prom-client-net/prom-client-metricpusher
