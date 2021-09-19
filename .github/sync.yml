@@ -1,7 +1,5 @@
 group:
   - files:
-      - source: main-workflows/
-        dest: .github/workflows/
       - source: root/
         dest: ./
       - source: github/
@@ -17,7 +15,7 @@ group:
       prom-client-net/prom-client-metricserver
 
   - files:
-      - source: simple-workflows/
+      - source: workflows/
         dest: .github/workflows/
     repos: |
       prom-client-net/prom-tmpl
