@@ -4,6 +4,8 @@ group:
         dest: ./
       - source: github/
         dest: .github/
+      - source: workflows/
+        dest: .github/workflows/
     repos: |
       prom-client-net/prom-client
       prom-client-net/prom-client-dependencyinjection
@@ -13,13 +15,3 @@ group:
       prom-client-net/prom-tmpl
       prom-client-net/prom-client-metricpusher
       prom-client-net/prom-client-metricserver
-
-  - files:
-      - source: workflows/
-        dest: .github/workflows/
-    repos: |
-      prom-client-net/prom-tmpl
-      prom-client-net/prom-client
-      prom-client-net/prom-client-dependencyinjection
-      prom-client-net/prom-client-httprequestdurations
-      prom-client-net/prom-client-metricpusher
