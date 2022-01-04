@@ -11,7 +11,7 @@
     "dependencies"
   ],
   "assignees": [
-    "@prom-client-net/devs"
+    "@phnx47"
   ],
   "ignoreDeps": [
     "Microsoft.Extensions.DependencyInjection.Abstractions",
