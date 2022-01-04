@@ -1,17 +1,30 @@
 group:
+  # workflows
   - files:
-      - source: root/
-        dest: ./
-      - source: github/
-        dest: .github/
       - source: workflows/
         dest: .github/workflows/
+        deleteOrphaned: true
     repos: |
+      prom-client-net/prom-tmpl
       prom-client-net/prom-client
       prom-client-net/prom-client-dependencyinjection
       prom-client-net/prom-client-healthchecks
       prom-client-net/prom-client-httprequestdurations
       prom-client-net/prom-client-aspnetcore
+      prom-client-net/prom-client-metricpusher
+      prom-client-net/prom-client-metricserver
+
+  - files:
+      - source: root/
+        dest: ./
+      - source: github/
+        dest: .github/
+    repos: |
       prom-client-net/prom-tmpl
+      prom-client-net/prom-client
+      prom-client-net/prom-client-dependencyinjection
+      prom-client-net/prom-client-healthchecks
+      prom-client-net/prom-client-httprequestdurations
+      prom-client-net/prom-client-aspnetcore
       prom-client-net/prom-client-metricpusher
       prom-client-net/prom-client-metricserver
