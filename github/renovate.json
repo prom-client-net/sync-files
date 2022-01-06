@@ -22,16 +22,11 @@
     {
       "automerge": true,
       "sourceUrlPrefixes": [
-        "https://github.com/xunit"
+        "https://github.com/coverlet-coverage",
+        "https://github.com/xunit",
+        "https://github.com/microsoft/vstest"
       ],
-      "groupName": "xUnit packages"
-    },
-    {
-      "automerge": true,
-      "sourceUrlPrefixes": [
-        "https://github.com/coverlet-coverage"
-      ],
-      "groupName": "coverlet packages"
+      "groupName": "tests"
     }
   ]
 }
