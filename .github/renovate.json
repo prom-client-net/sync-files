@@ -6,10 +6,6 @@
     "dependencies"
   ],
   "assignees": [
-    "@prom-client-net/devs"
-  ],
-  "ignoreDeps": [
-    "Microsoft.Extensions.DependencyInjection.Abstractions",
-    "Microsoft.SourceLink.GitHub"
+    "@phnx47"
   ]
 }
